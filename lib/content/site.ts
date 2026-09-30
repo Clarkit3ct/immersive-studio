@@ -189,6 +189,7 @@ export const pageLinks: NavLink[] = [
   { label: "FAQ", href: "/faq" },
   { label: "Founder Story", href: "/founder-story" },
   { label: "Contact Us", href: "/contact" },
+  { label: "Terms", href: "/terms" },
 ];
 
 export const desktopNav: DesktopNavItem[] = [
