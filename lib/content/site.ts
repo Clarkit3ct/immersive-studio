@@ -253,7 +253,7 @@ export const hero = {
   eyebrow: "The New Dimension of Design",
   headline: "Full Scale. Full Clarity.",
   subhead:
-    "Step inside future homes, properties, spaces, and original ideas at a 1:1 immersive scale, where architects, builders, real estate professionals, and creators can explore the vision before it exists anywhere else.",
+    "Stand inside your home before it's built. Your floor plan at full size on the floor, the walls at full height around you, so every room is decided before anything is framed.",
   scrollCue: "The Experience",
   media: {
     src: "/assets/hero/hero-image2.jpeg",
@@ -265,7 +265,7 @@ export const whatHappensHere = {
   eyebrow: "The Experience",
   headline:
     "Clarity before construction creates confidence throughout the process.",
-  subheading: "Walk through your plans at full scale.",
+  subheading: "Stand in your plans at full scale.",
   body: "Immersive Studio CDA is a private visualization and creative experience space in Coeur d'Alene, designed for builders, architects, and creators to share their vision at full scale before it meets the real world. Walk through your plans at full scale. Gather your clients or team inside the vision. Explore space, proportion, material, movement, and possibility in an environment designed to make ideas feel real.",
   media: {
     src: "/assets/diagrams/session-flow-how-it-works.webp",
@@ -281,27 +281,27 @@ export const howItWorks = {
     {
       number: "01",
       title: "Upload",
-      body: "Send your drawings. We handle the projection-ready prep.",
+      body: "Send your drawings. We get them ready for the floor."
     },
     {
       number: "02",
       title: "Project",
-      body: "The plan is projected on the floor. Elevations take the wall.",
+      body: "Your plan goes on the floor at full size. The elevations go up on the walls."
     },
     {
       number: "03",
       title: "Walk",
-      body: "Your client stands in the space and feels the design.",
+      body: "You stand in each room and feel how big it really is."
     },
     {
       number: "04",
       title: "Refine",
-      body: "Changes marked in the room, while they're still inexpensive.",
+      body: "Mark what you'd change, while a change is still only a line."
     },
     {
       number: "05",
       title: "Confirm",
-      body: "Decisions made before construction, not during.",
+      body: "Leave with the decisions made, before anyone builds anything."
     },
   ],
   highlights: [

@@ -10,7 +10,7 @@ export const SITE_NAME = "Immersive Studio CDA";
 export const HOME_TITLE = "Floor Plan Projection in Coeur d'Alene | Immersive Studio CDA";
 
 export const SITE_DESCRIPTION =
-  "See your floor plan at full 1:1 scale before you build. A projection studio in Coeur d'Alene for homeowners, builders, architects and real estate professionals.";
+  "Stand inside your home before it's built: your floor plan at full size, in downtown Coeur d'Alene. Decide every room before anything is framed.";
 
 /** A real session in the room, 1200 × 630, the size every share card expects. */
 export const OG_IMAGE = {
