@@ -5,7 +5,9 @@ import { contact, contactPage as copy } from "@/lib/content/site";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/contact" },
-  title: "Contact Us",
+  title: "Contact Us in Coeur d'Alene",
+  description:
+    "Book a session, ask about membership, plan an event or just say hello. Immersive Studio CDA, 216 E Coeur d'Alene Ave, downtown Coeur d'Alene. 208-755-2696.",
 };
 
 export default function ContactPage() {
