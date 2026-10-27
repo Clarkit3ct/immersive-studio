@@ -261,6 +261,23 @@ export const hero = {
   },
 } as const;
 
+/** The homepage background film: a wide cut for desktop, a tall cut for phones.
+ *  Wide = Uptic Studios footage of real sessions; tall = Jeremy's own phone clips
+ *  (the bed frame set on the projected bedroom). No words on screen, no sound. */
+export const heroFilm = {
+  alt: "People standing in a floor plan projected at full size on the studio floor",
+  wide: {
+    poster: "/assets/hero/film/cda-hero-bg-16x9-poster.webp",
+    webm: "/assets/hero/film/cda-hero-bg-16x9.webm",
+    mp4: "/assets/hero/film/cda-hero-bg-16x9.mp4",
+  },
+  tall: {
+    poster: "/assets/hero/film/cda-hero-bg-9x16-poster.webp",
+    webm: "/assets/hero/film/cda-hero-bg-9x16.webm",
+    mp4: "/assets/hero/film/cda-hero-bg-9x16.mp4",
+  },
+} as const;
+
 export const whatHappensHere = {
   eyebrow: "The Experience",
   headline:
