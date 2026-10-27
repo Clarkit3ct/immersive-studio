@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="284.8 262 284.8 252" font-family="'Hanken Grotesk','Helvetica Neue',Arial,sans-serif" font-weight="500">
+<defs>
+  <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+    <feGaussianBlur stdDeviation="7"/></filter>
+  <filter id="glowSm" x="-60%" y="-60%" width="220%" height="220%">
+    <feGaussianBlur stdDeviation="2.5"/></filter>
+  <linearGradient id="beamGrad" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#F7F7F3" stop-opacity=".22"/>
+    <stop offset="1" stop-color="#F7F7F3" stop-opacity=".02"/>
+  </linearGradient>
+  <radialGradient id="fieldGrad">
+    <stop offset="0" stop-color="#F7F7F3"/>
+    <stop offset="1" stop-color="#F7F7F3" stop-opacity=".75"/>
+  </radialGradient>
+
+  <linearGradient id="wallGrad" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#F7F7F3" stop-opacity=".04"/><stop offset=".45" stop-color="#F7F7F3" stop-opacity=".34"/><stop offset="1" stop-color="#F7F7F3" stop-opacity=".62"/>
+  </linearGradient>
+</defs>
+
+<g>
+<polyline points="524.2,345.0 427.2,289.0 330.2,345.0" fill="none" stroke="#F7F7F3" stroke-width="1.1" stroke-opacity="0.81" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="524.2,345.0 524.2,448.0 427.2,504.0 330.2,448.0 330.2,345.0" fill="none" stroke="#F7F7F3" stroke-width="1.1" stroke-opacity="0.9" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="427.2,289.0 427.2,392.0" fill="none" stroke="#F7F7F3" stroke-width="1.1" stroke-opacity="0.675" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="524.2,448.0 427.2,392.0 330.2,448.0" fill="none" stroke="#F7F7F3" stroke-width="1.1" stroke-opacity="0.675" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="475.7,420.0 475.7,317.0" fill="none" stroke="#F7F7F3" stroke-width="0.7" stroke-opacity="0.25200000000000006" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="378.7,420.0 378.7,317.0" fill="none" stroke="#F7F7F3" stroke-width="0.7" stroke-opacity="0.25200000000000006" stroke-linejoin="round" stroke-linecap="round" />
+<polygon points="444.7,312.5 455.3,318.6 444.7,324.8 434.0,318.6" fill="none" stroke="#F7F7F3" stroke-width="0.9" stroke-opacity="0.9" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="455.3,318.6 455.3,324.8 444.7,331.0 444.7,324.8" fill="none" stroke="#F7F7F3" stroke-width="0.9" stroke-opacity="0.7200000000000001" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="444.7,331.0 434.0,324.8 434.0,318.6" fill="none" stroke="#F7F7F3" stroke-width="0.9" stroke-opacity="0.7200000000000001" stroke-linejoin="round" stroke-linecap="round" />
+<polygon points="479.6,332.6 490.2,338.8 479.6,345.0 468.9,338.8" fill="none" stroke="#F7F7F3" stroke-width="0.9" stroke-opacity="0.9" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="490.2,338.8 490.2,345.0 479.6,351.1 479.6,345.0" fill="none" stroke="#F7F7F3" stroke-width="0.9" stroke-opacity="0.7200000000000001" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="479.6,351.1 468.9,345.0 468.9,338.8" fill="none" stroke="#F7F7F3" stroke-width="0.9" stroke-opacity="0.7200000000000001" stroke-linejoin="round" stroke-linecap="round" />
+<polygon points="374.8,332.6 385.5,338.8 374.8,345.0 364.2,338.8" fill="none" stroke="#F7F7F3" stroke-width="0.9" stroke-opacity="0.9" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="385.5,338.8 385.5,345.0 374.8,351.1 374.8,345.0" fill="none" stroke="#F7F7F3" stroke-width="0.9" stroke-opacity="0.7200000000000001" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="374.8,351.1 364.2,345.0 364.2,338.8" fill="none" stroke="#F7F7F3" stroke-width="0.9" stroke-opacity="0.7200000000000001" stroke-linejoin="round" stroke-linecap="round" />
+<polygon points="444.7,331.0 400.9,467.8 453.5,467.8" fill="url(#beamGrad)" stroke="none"/>
+<polygon points="479.6,351.1 400.9,467.8 453.5,467.8" fill="url(#beamGrad)" stroke="none"/>
+<polygon points="374.8,351.1 400.9,467.8 453.5,467.8" fill="url(#beamGrad)" stroke="none"/>
+<polygon points="427.2,414.4 491.2,451.4 427.2,488.3 363.2,451.4" fill="url(#fieldGrad)" stroke="#F7F7F3" stroke-width="1.0" stroke-opacity="0.85" stroke-linejoin="round" stroke-linecap="round" filter="url(#glow)"/>
+<polygon points="427.2,414.4 491.2,451.4 427.2,488.3 363.2,451.4" fill="#F7F7F3" stroke="#F7F7F3" stroke-width="1.0" stroke-opacity="0.9" stroke-linejoin="round" stroke-linecap="round" fill-opacity=".92"/>
+<polyline points="396.2,432.3 421.4,446.9" fill="none" stroke="#0A0A0A" stroke-width="1.1" stroke-opacity="0.38" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="431.1,452.5 460.2,469.3" fill="none" stroke="#0A0A0A" stroke-width="1.1" stroke-opacity="0.38" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="460.2,433.4 444.7,442.4" fill="none" stroke="#0A0A0A" stroke-width="1.1" stroke-opacity="0.38" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="436.9,446.9 429.1,451.4" fill="none" stroke="#0A0A0A" stroke-width="1.1" stroke-opacity="0.38" stroke-linejoin="round" stroke-linecap="round" />
+<polyline points="411.7,441.3 378.7,460.3" fill="none" stroke="#0A0A0A" stroke-width="1.1" stroke-opacity="0.38" stroke-linejoin="round" stroke-linecap="round" />
+<g id="people-2"></g>
+
+
+
+</g>
+</svg>

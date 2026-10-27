@@ -281,27 +281,37 @@ export const howItWorks = {
     {
       number: "01",
       title: "Upload",
-      body: "Send your drawings. We get them ready for the floor."
+      body: "Send your drawings. We get them ready for the floor.",
+      image: "/assets/diagrams/session/01-upload.svg",
+      alt: "An empty room with a desk and an open laptop: the drawings arrive",
     },
     {
       number: "02",
       title: "Project",
-      body: "Your plan goes on the floor at full size. The elevations go up on the walls."
+      body: "Your plan goes on the floor at full size. The elevations go up on the walls.",
+      image: "/assets/diagrams/session/02-project.svg",
+      alt: "Ceiling projectors throwing the floor plan onto the studio floor at full size",
     },
     {
       number: "03",
       title: "Walk",
-      body: "You stand in each room and feel how big it really is."
+      body: "You stand in each room and feel how big it really is.",
+      image: "/assets/diagrams/session/03-walk.svg",
+      alt: "Two people walking across the plan projected on the floor",
     },
     {
       number: "04",
       title: "Refine",
-      body: "Mark what you'd change, while a change is still only a line."
+      body: "Mark what you'd change, while a change is still only a line.",
+      image: "/assets/diagrams/session/04-refine.svg",
+      alt: "One person kneeling to mark a change on the floor while another looks on",
     },
     {
       number: "05",
       title: "Confirm",
-      body: "Leave with the decisions made, before anyone builds anything."
+      body: "Leave with the decisions made, before anyone builds anything.",
+      image: "/assets/diagrams/session/05-confirm.svg",
+      alt: "Two people shaking hands on the plan: the decisions made",
     },
   ],
   highlights: [

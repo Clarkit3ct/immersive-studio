@@ -1,11 +1,10 @@
-import Image from "next/image";
 import { whatHappensHere as copy } from "@/lib/content/site";
 
 export function WhatHappensHere() {
   return (
     <section
       id="the-experience"
-      className="scroll-mt-28 bg-off-white px-site pt-24 pb-8 md:pt-32 md:pb-10"
+      className="scroll-mt-28 bg-off-white px-site pt-24 pb-20 md:pt-32 md:pb-28"
     >
       <div className="mx-auto flex w-full max-w-[110rem] flex-col gap-20 md:gap-24">
         <div className="grid gap-10 lg:grid-cols-3 lg:items-start lg:gap-16">
@@ -24,17 +23,6 @@ export function WhatHappensHere() {
           </div>
         </div>
 
-        <div className="-mx-8 w-[calc(100%+4rem)] max-w-none md:mx-auto md:w-full md:max-w-6xl lg:px-8">
-          <div className="relative aspect-[16/9] w-full overflow-hidden bg-onyx/10">
-            <Image
-              src={copy.media.src}
-              alt={copy.media.alt}
-              fill
-              sizes="(max-width: 768px) 100vw, 72rem"
-              className="object-cover"
-            />
-          </div>
-        </div>
       </div>
     </section>
   );
