@@ -54,7 +54,7 @@ export function HowItWorks({ filmLink = false }: { filmLink?: boolean }) {
               href="/the-experience"
               className="mx-auto text-[0.9375rem] font-medium text-off-white underline-offset-4 hover:underline"
             >
-              Watch a session →
+              Experience the studio →
             </Link>
           ) : null}
         </div>

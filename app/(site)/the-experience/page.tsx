@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { ExperiencePage } from "@/components/sections/experience-page";
 
 export const metadata: Metadata = {
-  title: "See a Session",
+  title: "The Experience",
   description:
-    "Watch a one-minute film of a session at Immersive Studio CDA: your floor plan at full size in downtown Coeur d'Alene, and every room decided before anything is framed.",
+    "Come experience Immersive Studio CDA in downtown Coeur d'Alene, where your floor plan is projected at full size.",
   alternates: { canonical: "/the-experience" },
 };
 

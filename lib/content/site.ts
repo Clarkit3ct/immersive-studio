@@ -265,7 +265,7 @@ export const desktopNav: DesktopNavItem[] = [
   {
     label: "The Experience",
     links: [
-      { label: "See a Session", href: "/the-experience" },
+      { label: "Experience the Studio", href: "/the-experience" },
       { label: "Who It's For", href: whoItsForPath },
       { label: "Vendor Showcase", href: showcasePath },
     ],
@@ -280,7 +280,7 @@ export const navGroups: NavGroup[] = [
     id: "experience",
     label: "The Experience",
     links: [
-      { label: "See a Session", href: "/the-experience" },
+      { label: "Experience the Studio", href: "/the-experience" },
       { label: "Who It's For", href: whoItsForPath },
       { label: "Vendor Showcase", href: showcasePath },
       { label: "Events", href: eventsHref },
