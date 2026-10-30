@@ -5,6 +5,7 @@ import { useSearchParams } from "next/navigation";
 import { Toast } from "@/components/ui/toast";
 import { contactPage } from "@/lib/content/site";
 import { submitContactForm } from "@/app/(site)/contact/actions";
+import { sendGAEvent } from "@next/third-parties/google";
 
 const copy = contactPage.form;
 
@@ -50,6 +51,11 @@ function ContactFormInner() {
         `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
       );
       window.location.href = `mailto:${targetEmail}?subject=${subject}&body=${body}`;
+    }
+
+    // GA key event (no-op when GA isn't loaded). No names or emails sent.
+    if (typeof window !== "undefined" && "gtag" in window) {
+      sendGAEvent("event", "generate_lead", { form: "contact", category });
     }
 
     setPending(false);

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Hanken_Grotesk, Instrument_Serif } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { AnalyticsEvents } from "@/components/analytics-events";
 import { brand } from "@/lib/brand";
 import { HOME_TITLE, OG_IMAGE, SITE_DESCRIPTION, SITE_URL } from "@/lib/seo";
 import "./globals.css";
@@ -35,6 +36,11 @@ export const metadata: Metadata = {
     images: [OG_IMAGE],
   },
   twitter: { card: "summary_large_image" },
+  // Search Console ownership: paste the HTML-tag code (the content="…" value)
+  // into Vercel as GOOGLE_SITE_VERIFICATION, then redeploy.
+  ...(process.env.GOOGLE_SITE_VERIFICATION
+    ? { verification: { google: process.env.GOOGLE_SITE_VERIFICATION } }
+    : {}),
 };
 
 // Google Analytics loads only when NEXT_PUBLIC_GA_ID is set in Vercel
@@ -52,6 +58,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col bg-off-white text-onyx font-sans">
         {children}
         {gaId ? <GoogleAnalytics gaId={gaId} /> : null}
+        {gaId ? <AnalyticsEvents /> : null}
       </body>
     </html>
   );
