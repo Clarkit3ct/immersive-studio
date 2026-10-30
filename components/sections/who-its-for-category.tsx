@@ -44,6 +44,7 @@ export function WhoItsForCategory({ audience }: { audience: Audience }) {
               src={audience.media.hero.src}
               alt={audience.media.hero.alt}
               imageClassName={audience.media.hero.imageClassName}
+              credit={audience.media.hero.credit}
               tone="light"
               className="aspect-[16/9] w-full"
             />
@@ -58,6 +59,7 @@ export function WhoItsForCategory({ audience }: { audience: Audience }) {
                   src={audience.media.inline.src}
                   alt={audience.media.inline.alt}
                   imageClassName={audience.media.inline.imageClassName}
+                  credit={audience.media.inline.credit}
                   tone="light"
                   className="aspect-[4/3] w-full"
                 />

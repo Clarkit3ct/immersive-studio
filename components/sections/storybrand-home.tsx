@@ -95,7 +95,6 @@ export function Solution() {
           <h3 className="m-0 text-[1.5rem] font-normal leading-[1.2] md:text-[1.75rem]">
             {solution.subheading}
           </h3>
-          <p className="m-0 max-w-[520px] text-[1.0625rem] leading-[1.55] text-dove">{solution.body}</p>
           <ul className="m-0 flex w-full list-none flex-col gap-3 p-0">
             {solution.points.map((point) => (
               <li key={point} className="flex items-start gap-3 text-[1.0625rem] leading-[1.5]">

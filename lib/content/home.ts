@@ -29,8 +29,7 @@ export const solution = {
   light: "Why imagine what you’re building",
   bold: "when you can walk through it?",
   subheading: "Build Your Dream Home, Stress-Free",
-  body: "Visualize your dream project without stress or unexpected costs, ensuring clarity and confidence before the first brick is laid.",
-  points: [
+    points: [
     "Save money by visualizing before building",
     "Avoid costly change orders with clear plans",
     "Feel confident and excited about construction",

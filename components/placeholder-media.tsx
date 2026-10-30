@@ -13,6 +13,8 @@ type PlaceholderMediaProps = {
   imageClassName?: string;
   interactive?: boolean;
   onClick?: () => void;
+  /** Small tag over the photo's bottom-right corner, e.g. "Photo credit: Uptic Studios". */
+  credit?: string;
 };
 
 const toneStyles = {
@@ -48,6 +50,7 @@ export function PlaceholderMedia({
   imageClassName = "",
   interactive = false,
   onClick,
+  credit,
 }: PlaceholderMediaProps) {
   const content = (
     <>
@@ -89,6 +92,11 @@ export function PlaceholderMedia({
           </div>
         </>
       )}
+      {src && credit ? (
+        <span className="absolute bottom-2 right-2 rounded-[2px] bg-[rgba(10,10,10,0.7)] px-2 py-[3px] text-[0.6875rem] text-off-white">
+          {credit}
+        </span>
+      ) : null}
     </>
   );
 

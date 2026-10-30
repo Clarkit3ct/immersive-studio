@@ -27,6 +27,7 @@ export type AudienceMedia = {
   src?: string;
   alt?: string;
   imageClassName?: string;
+  credit?: string;
 };
 
 export type EventGalleryItem = {
@@ -78,8 +79,8 @@ export const audiences: Audience[] = [
     pageEyebrow: "FOR BUILDERS",
     subheading: "Give your clients a clear, tangible way to understand the project before construction begins.",
     paragraphs: [
-      "Offer your clients a pre-construction experience unlike anything they have seen before. Walk through the project at full scale, evaluate important details, and make confident decisions before construction begins.",
-      "Identify potential issues early, reduce costly change orders and delays, and ensure everyone is aligned before a shovel ever hits the ground. Developers, municipalities, and commercial teams use it the same way, walking larger structures floor by floor.",
+      "Walk the project with your client at full scale and settle the details before you break ground.",
+      "Identify potential issues early, reduce costly change orders and delays, and ensure everyone is aligned before you break ground. Developers and commercial teams use it the same way, walking larger structures floor by floor.",
     ],
     details: {
       title: "Our space allows for:",
@@ -108,7 +109,7 @@ export const audiences: Audience[] = [
     paragraphs: [
       "Architectural decisions feel different when they can be experienced at full scale.",
       "Immersive Studio CDA’s 1:1 floor plan projection environment allows architecture teams to walk through life-size layouts in real space, making it easier to evaluate circulation, sightlines, clearances, proportions, and overall flow before documentation is finalized.",
-      "The studio is designed for collaborative review, bringing together architects, consultants, clients, and selected project partners. A curated vendor showcase also allows materials, fixtures, finishes, and lighting to be evaluated in context.",
+      "The studio is designed for collaborative review, bringing together architects, consultants, clients, and selected project partners.",
       "The result is a more engaging and productive decision-making process, one that can accelerate approvals, reduce late-stage revisions, and support a smoother transition from design development to construction-ready plans. Interior designers use the studio the same way, testing layouts and finish relationships at real scale before orders go in.",
     ],
     cta: { label: "Schedule free consultation", href: "/free-consultation" },
@@ -143,14 +144,14 @@ export const audiences: Audience[] = [
     cta: { label: "Schedule free consultation", href: "/free-consultation" },
     media: {
       hero: { label: "Clients in a great room at full scale", src: "/assets/who-is-it-for/interior-designer/main-image.jpg" },
-      inline: { label: "Reviewing a plan together at full scale", src: "/assets/who-is-it-for/interior-designer/second-image.jpg" },
+      inline: { label: "Reviewing a plan together at full scale", src: "/assets/who-is-it-for/interior-designer/second-image.jpg", credit: "Photo credit: Uptic Studios" },
     },
   },
   {
     slug: "developers",
     label: "Developers",
     headline: "Your sales gallery for homes that don't exist yet.",
-    body: "Your buyers shouldn't have to wait for a finished unit to fall in love with it. Homes, townhomes and condos at true 1:1, with no model unit to build, furnish or staff.",
+    body: "Your buyers shouldn't have to wait for a finished unit to say yes. Homes, townhomes and condos at true 1:1, with no model unit to build, furnish or staff.",
     pageEyebrow: "FOR DEVELOPERS",
     pageHeadline: "Your sales gallery for\nhomes that don't exist yet.",
     subheading: "Why wait for a model home to start showing buyers the space?",
@@ -172,7 +173,7 @@ export const audiences: Audience[] = [
     cta: { label: "Schedule free consultation", href: "/free-consultation" },
     media: {
       hero: { label: "A home's elevation at full height above its plan", src: "/assets/who-is-it-for/developer/main-image.jpg" },
-      inline: { label: "Buyers on a full-scale plan", src: "/assets/who-is-it-for/developer/second-image.jpg" },
+      inline: { label: "Buyers on a full-scale plan", src: "/assets/who-is-it-for/developer/second-image.jpg", credit: "Photo credit: Uptic Studios" },
     },
   },
   {
@@ -183,8 +184,8 @@ export const audiences: Audience[] = [
     pageEyebrow: "FOR REAL ESTATE PROFESSIONALS",
     subheading: "Give your clients, and yourself, the opportunity to compare multiple properties from one central location.",
     paragraphs: [
-      "Property searches can require significant time from both real estate professionals and their clients. Touring multiple locations adds travel, scheduling, and expense, while photos and listings often fail to communicate the true scale, flow, and feel of a space.",
-      "Immersive Studio CDA creates a more efficient way to evaluate prospective properties. Bring multiple floor plans into the studio, experience each one at 1:1 scale, and compare layouts before scheduling in-person visits.",
+      "Touring every property takes time, and photos rarely show the real size and flow of a space.",
+      "Bring several floor plans, walk each one at 1:1, and only tour the ones that fit.",
       "By helping clients understand which spaces are most likely to fit their needs, the studio makes it easier to narrow the search, eliminate poor-fit properties earlier, and reserve valuable time for the locations worth seeing in person. Comparing a listing in another state? Bring the plans here and walk it at full scale instead of making the trip.",
     ],
     cta: { label: "Schedule free consultation", href: "/free-consultation" },
@@ -197,12 +198,12 @@ export const audiences: Audience[] = [
     slug: "experience-creators",
     label: "Experience Creators",
     headline: "Stage an idea the room can hold.",
-    body: "The studio can transform around a purpose: a launch, a presentation, a dinner, a performance. Experience creators use the space to put an audience inside an idea, with image, sound, and atmosphere, in a setting that is intentionally selective and shaped with each host.",
+    body: "The studio can be set up for a launch, a presentation, a dinner, a performance. Experience creators use the space to put an audience inside an idea, with image, sound, and atmosphere, in a setting that is intentionally selective and shaped with each host.",
     pageEyebrow: "FOR EXPERIENCE CREATORS",
     subheading: "For designers, filmmakers, artists, strategists, educators, and experience-makers working beyond the limits of traditional media.",
     paragraphs: [
-      "Immersive Studio CDA gives creative work a new dimension. Films can become environments. Ideas can unfold across an entire room. Installations, launches, performances, educational experiences, and gatherings can move beyond presentation and become something audiences actively experience.",
-      "Bring finished work into the studio, or collaborate with the team to expand an early concept into a fully immersive expression. Explore how image, sound, scale, movement, and atmosphere can work together to transport an audience somewhere new.",
+      "Project film, images and sound across the floor and walls for a launch, a presentation, a performance or a gathering.",
+      "Bring finished work, or build an early idea out with us.",
       "This space invites people to become part of the experience rather than simply observe it.",
     ],
     cta: { label: "Propose a Creative Experience", href: "/contact?category=Private%20Events" },
@@ -215,15 +216,14 @@ export const audiences: Audience[] = [
     slug: "homeowners",
     label: "Homeowners",
     headline: "Stand in the home before it exists.",
-    body: "Choosing a layout from paper is an act of imagination. Homeowners come to the studio with their architect or builder to walk the rooms, feel the proportions, and make the decisions that are inexpensive now and expensive later. Clarity here becomes confidence throughout the process.",
+    body: "Choosing a layout from paper is an act of imagination. Homeowners come to the studio with their architect or builder to walk the rooms, feel the proportions, and make the decisions that are inexpensive now and expensive later.",
     pageEyebrow: "FOR THE PEOPLE BEHIND THE PROJECT",
-    pageHeadline: "See More Than Plans.\nRecognize Your Future.",
+    pageHeadline: "Stand in your home\nbefore it's built.",
     subheading: "An invitation to experience the spaces you are creating before construction begins.",
     paragraphs: [
       "You should love your custom home before you ever move in.",
       "At Immersive Studio CDA, homeowners can experience their future home at full scale before construction begins. Walk through each room, understand the flow between spaces, and evaluate how the layout will support the way your family actually lives.",
-      "This immersive review creates an opportunity to refine important decisions early, reduce the risk of costly change orders and delays, and move into construction with greater clarity and confidence.",
-      "Ensure the plans you approve become a home you will love living in for years to come.",
+      "Change what you want while it's still a line on paper, not a change order.",
     ],
     cta: { label: "Schedule free consultation", href: "/free-consultation" },
     media: {
@@ -412,7 +412,7 @@ export const founder = {
     "Jeremy began his career in the field, working his way from labor and finish carpentry into project management, home design, and eventually business ownership. For 13 years, he owned and operated his own construction company, developing a firsthand understanding of every stage of the building process.",
     "Over the past decade, his work has focused primarily on luxury residential construction, including multi-million-dollar custom homes where thoughtful planning, clear communication, and confident decision-making are essential.",
     "But the idea for Immersive Studio became personal when Jeremy began designing a home for his own family. Even with decades of experience, he found himself wishing for a better way to truly understand the plans, experience the scale of each space, and work through important decisions before construction began.",
-    "That experience became the catalyst for Immersive Studio CDA - a place designed to bring greater clarity and ease to the building process by allowing architects, builders, designers, and their clients to experience plans together at full scale before they're built.",
+    "So he built Immersive Studio CDA, where architects, builders, designers and their clients walk a plan together at full scale before it's built.",
   ],
   media: {
     src: "/assets/founder/headshot.jpeg",
@@ -464,7 +464,7 @@ export const foundingStudioPartners = {
   cta: {
     label: "Request Founding Partner Details",
     href: "/contact?category=Studio%20Membership",
-    supportingLine: "Founding partnerships are intentionally limited to preserve the quality and availability of the experience.",
+    supportingLine: "Seven founding seats.",
   },
   secondaryCta: {
     label: "View membership details",
@@ -583,9 +583,9 @@ export const privateEventsPage = {
 } as const;
 
 export const showcasePage = {
-  eyebrow: "CURATED FOR THE BUILT ENVIRONMENT",
+  eyebrow: "VENDOR SHOWCASE",
   headline: "Experience Design Selections in Context.",
-  subheading: "A curated showcase of premium materials, fixtures, finishes, lighting, furnishings, and building products.",
+  subheading: "Materials, fixtures and finishes, seen at full scale. Now taking vendors.",
   paragraphs: [
     "Immersive Studio CDA's vendor showcase allows clients and project teams to compare design selections within the context of the full-scale environment they are intended for.",
     "Rather than choosing from isolated samples alone, guests can experience how materials, textures, lighting, and finishes relate to the broader design vision.",
@@ -611,7 +611,7 @@ export const membershipPage = {
     sub: "1:1 projection of floor plans & elevations in downtown Coeur d’Alene",
   },
   stats: [],
-  narrative: "Even good drawings are hard to picture. Clients sign off on spaces they haven’t truly experienced, then change them mid-build. At Immersive Studio, they step inside their future space at true 1:1 scale, projected across 3,500± sq ft of floor and a 50± ft wall. Design questions get answered while they’re still erasable, and clients say yes with confidence. The studio is a 3,500± sq ft projection floor and two 50' × 13' projection walls.",
+  narrative: "Even good drawings are hard to picture. Clients sign off on spaces they haven’t truly experienced, then change them mid-build. At Immersive Studio, they step inside their future space at true 1:1 scale, projected across a 3,500± sq ft floor, with elevations on two 50' × 13' walls. Design questions get answered while they’re still erasable, and clients say yes with confidence.",
   benefits: [
     {
       number: "01",
@@ -621,7 +621,7 @@ export const membershipPage = {
     {
       number: "02",
       title: "Member rate on extras",
-      body: "Members can add sessions anytime at a significant value compared to our standard à la carte price.",
+      body: "Members can add sessions anytime at the member rate.",
     },
     {
       number: "03",
@@ -647,7 +647,7 @@ export const membershipPage = {
   cta: {
     label: "Request Founding Partner Details",
     href: "/contact?category=Studio%20Membership",
-    supportingLine: "Founding partnerships are intentionally limited to preserve the quality and availability of the experience.",
+    supportingLine: "Seven founding seats.",
   },
   secondaryCta: {
     label: "Buy the 3-Session Bundle",
@@ -708,7 +708,7 @@ export const contactPage = {
   form: {
     nameLabel: "First and Last Name",
     emailLabel: "Email",
-    categoryLabel: "Why you're reaching out about",
+    categoryLabel: "What's this about?",
     categoryPlaceholder: "Select an inquiry type",
     categoryOptions: [
       "Booking a Session",
@@ -776,7 +776,7 @@ export const faqPage = {
         },
         {
           question: "Do you offer professional memberships?",
-          answer: "Immersive Studio CDA is developing a limited founding partner program for builders, architects, designers, and creative firms seeking recurring studio access. Partnership details are available by request."
+          answer: "Yes. Builders, architects, designers and creative firms who use the studio often can join a monthly membership with sessions included. See the membership page for details."
         }
       ],
     },

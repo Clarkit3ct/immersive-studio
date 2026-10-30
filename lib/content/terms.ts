@@ -12,7 +12,7 @@ export const termsPage = {
     },
     {
       "title": "2. Rescheduling and cancellation",
-      "body": "You may reschedule or cancel up to 24 hours before your session start time at no cost, using the links in your confirmation email. A rescheduled session keeps its deposit. If you cancel more than 24 hours ahead, we refund your deposit to your card. Inside 24 hours, and for no-shows, the deposit is not refunded and no balance is charged. Membership sessions cancelled inside 24 hours count against that month's allowance."
+      "body": "You may cancel at no cost up to 24 hours before your session start time, using the link in your confirmation email, and we refund your deposit to your card. You may reschedule at any time, including inside 24 hours: online up to 24 hours before, or by replying to your confirmation email after that. A rescheduled session keeps its deposit. If you cancel inside 24 hours, or don't show, the deposit is not refunded and no balance is charged. Membership sessions cancelled inside 24 hours count against that month's allowance."
     },
     {
       "title": "3. Your plans and files",

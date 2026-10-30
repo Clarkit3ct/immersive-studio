@@ -5,7 +5,7 @@ export type LandingContent = {
   eyebrow: string;
   headline: string;
   intro: string;
-  image: { src: string; alt: string };
+  image: { src: string; alt: string; credit?: string };
   sections: { title: string; body?: string; bullets?: string[] }[];
   faqs: { q: string; a: string }[];
   cta: { label: string; href: string };
@@ -66,6 +66,11 @@ export function LandingPage({ content }: { content: LandingContent }) {
             sizes="(min-width: 1152px) 1152px, 100vw"
             className="object-cover"
           />
+          {content.image.credit ? (
+            <span className="absolute bottom-2 right-2 rounded-[2px] bg-[rgba(10,10,10,0.7)] px-2 py-[3px] text-[0.6875rem] text-off-white">
+              {content.image.credit}
+            </span>
+          ) : null}
         </div>
       </section>
 
