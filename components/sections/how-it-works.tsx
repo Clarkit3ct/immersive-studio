@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { howItWorks as copy } from "@/lib/content/site";
 
 /*
@@ -6,7 +7,7 @@ import { howItWorks as copy } from "@/lib/content/site";
  * have no frame of their own: they belong to the section, not dropped into it.
  * Hover or focus a step: its room grows and brightens, the others step back.
  */
-export function HowItWorks() {
+export function HowItWorks({ filmLink = false }: { filmLink?: boolean }) {
   return (
     <>
       <section
@@ -48,6 +49,14 @@ export function HowItWorks() {
               </li>
             ))}
           </ol>
+          {filmLink ? (
+            <Link
+              href="/the-experience"
+              className="mx-auto text-[0.9375rem] font-medium text-off-white underline-offset-4 hover:underline"
+            >
+              Watch a session →
+            </Link>
+          ) : null}
         </div>
       </section>
 

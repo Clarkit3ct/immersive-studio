@@ -26,7 +26,7 @@ export default function Home() {
       <Hero />
       <Problem />
       <Solution />
-      <HowItWorks />
+      <HowItWorks filmLink />
       <Guide />
       <Plan />
       <Success />

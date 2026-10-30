@@ -7,6 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
   const paths = [
     "/",
+    "/the-experience",
     "/who-its-for",
     ...audiences.map((audience) => `/who-its-for/${audience.slug}`),
     "/free-consultation",
