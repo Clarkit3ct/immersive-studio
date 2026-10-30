@@ -370,8 +370,6 @@ export function SiteHeader() {
 
             <a
               href={primaryAction.href}
-              target="_blank"
-              rel="noopener noreferrer"
               aria-hidden={menuOpen}
               tabIndex={menuOpen ? -1 : undefined}
               className={`hidden whitespace-nowrap rounded-[2px] px-5 py-3 text-[0.875rem] font-medium tracking-normal transition-[opacity,transform,background-color] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none lg:inline-block ${
@@ -464,8 +462,6 @@ export function SiteHeader() {
 
             <a
               href={primaryAction.href}
-              target="_blank"
-              rel="noopener noreferrer"
               onClick={closeMenu}
               className="w-fit rounded-[2px] bg-off-white px-6 py-4 text-[0.9375rem] font-medium text-onyx transition-colors hover:bg-white"
             >

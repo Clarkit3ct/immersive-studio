@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { HeroFilm } from "@/components/hero-film";
 import { hero, primaryAction } from "@/lib/content/site";
 
@@ -26,14 +27,12 @@ export function Hero() {
         <p className="m-0 max-w-[900px] text-balance text-[1.125rem] leading-[1.55] text-off-white md:text-[1.375rem]">
           {hero.subhead}
         </p>
-        <a
+        <Link
           href={primaryAction.href}
-          target="_blank"
-          rel="noopener noreferrer"
           className="rounded-[2px] bg-off-white px-7 py-4 text-[0.9375rem] font-medium text-[#0a0a0a] [text-shadow:none] transition-colors hover:bg-white"
         >
           {primaryAction.label} →
-        </a>
+        </Link>
       </div>
     </section>
   );

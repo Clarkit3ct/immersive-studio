@@ -31,9 +31,9 @@ function Headline({
 // Every consultation button is the solid one: it must always read clearly (Roger 10/30).
 function ButtonLink() {
   return (
-    <a href={cta.href} target="_blank" rel="noopener noreferrer" className={solidBtn}>
+    <Link href={cta.href} className={solidBtn}>
       {cta.label}
-    </a>
+    </Link>
   );
 }
 

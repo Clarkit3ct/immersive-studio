@@ -9,6 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/",
     "/who-its-for",
     ...audiences.map((audience) => `/who-its-for/${audience.slug}`),
+    "/free-consultation",
     "/membership",
     "/showcase",
     "/faq",

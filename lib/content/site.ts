@@ -92,7 +92,7 @@ export const audiences: Audience[] = [
         "Steps from Sherman Avenue in downtown Coeur d'Alene",
       ],
     },
-    cta: { label: "Schedule free consultation", href: "https://immersivestudiocda-book.as.me/" },
+    cta: { label: "Schedule free consultation", href: "/free-consultation" },
     media: {
       hero: { label: "Pre-construction walkthrough", src: "/assets/who-is-it-for/builder/main-image.jpg" },
       inline: { label: "Studio details and projection", src: "/assets/who-is-it-for/builder/second-image.jpg" },
@@ -111,7 +111,7 @@ export const audiences: Audience[] = [
       "The studio is designed for collaborative review, bringing together architects, consultants, clients, and selected project partners. A curated vendor showcase also allows materials, fixtures, finishes, and lighting to be evaluated in context.",
       "The result is a more engaging and productive decision-making process, one that can accelerate approvals, reduce late-stage revisions, and support a smoother transition from design development to construction-ready plans. Interior designers use the studio the same way, testing layouts and finish relationships at real scale before orders go in.",
     ],
-    cta: { label: "Schedule free consultation", href: "https://immersivestudiocda-book.as.me/" },
+    cta: { label: "Schedule free consultation", href: "/free-consultation" },
     media: {
       hero: { label: "1:1 architectural projection", src: "/assets/who-is-it-for/architech/main-image.jpg" },
       inline: { label: "Collaborative design review", src: "/assets/who-is-it-for/architech/second-image.jpg" },
@@ -140,7 +140,7 @@ export const audiences: Audience[] = [
         "Materials, fixtures, finishes and lighting from the vendor showcase",
       ],
     },
-    cta: { label: "Schedule free consultation", href: "https://immersivestudiocda-book.as.me/" },
+    cta: { label: "Schedule free consultation", href: "/free-consultation" },
     media: {
       hero: { label: "Clients in a great room at full scale", src: "/assets/who-is-it-for/interior-designer/main-image.jpg" },
       inline: { label: "Reviewing a plan together at full scale", src: "/assets/who-is-it-for/interior-designer/second-image.jpg" },
@@ -169,7 +169,7 @@ export const audiences: Audience[] = [
         "Elevations at full height on two 50′ × 13′ walls",
       ],
     },
-    cta: { label: "Schedule free consultation", href: "https://immersivestudiocda-book.as.me/" },
+    cta: { label: "Schedule free consultation", href: "/free-consultation" },
     media: {
       hero: { label: "A home's elevation at full height above its plan", src: "/assets/who-is-it-for/developer/main-image.jpg" },
       inline: { label: "Buyers on a full-scale plan", src: "/assets/who-is-it-for/developer/second-image.jpg" },
@@ -187,7 +187,7 @@ export const audiences: Audience[] = [
       "Immersive Studio CDA creates a more efficient way to evaluate prospective properties. Bring multiple floor plans into the studio, experience each one at 1:1 scale, and compare layouts before scheduling in-person visits.",
       "By helping clients understand which spaces are most likely to fit their needs, the studio makes it easier to narrow the search, eliminate poor-fit properties earlier, and reserve valuable time for the locations worth seeing in person. Comparing a listing in another state? Bring the plans here and walk it at full scale instead of making the trip.",
     ],
-    cta: { label: "Schedule free consultation", href: "https://immersivestudiocda-book.as.me/" },
+    cta: { label: "Schedule free consultation", href: "/free-consultation" },
     media: {
       hero: { label: "Property comparison at 1:1 scale", src: "/assets/who-is-it-for/realtor/main-image.jpg" },
       inline: { label: "Multi-plan studio session", src: "/assets/who-is-it-for/realtor/second-image.jpg" },
@@ -225,7 +225,7 @@ export const audiences: Audience[] = [
       "This immersive review creates an opportunity to refine important decisions early, reduce the risk of costly change orders and delays, and move into construction with greater clarity and confidence.",
       "Ensure the plans you approve become a home you will love living in for years to come.",
     ],
-    cta: { label: "Schedule free consultation", href: "https://immersivestudiocda-book.as.me/" },
+    cta: { label: "Schedule free consultation", href: "/free-consultation" },
     media: {
       hero: { label: "Future home at full scale", src: "/assets/who-is-it-for/homeowner/main-image.jpg" },
       inline: { label: "Room flow and layout review", src: "/assets/who-is-it-for/homeowner/second-image.jpg" },
@@ -244,7 +244,8 @@ export function getAudience(slug: string) {
 export const bundleHref = "https://immersivestudiocda-book.as.me/catalog/fb0d2c96/?productId=2281309&clearCart=true";
 
 export const eventsHref = "https://events.immersivestudiocda.com";
-export const consultationHref = "https://immersivestudiocda-book.as.me/";
+/** Every "Schedule free consultation" button goes to our own page, with the booking inside. */
+export const consultationHref = "/free-consultation";
 
 export const pageLinks: NavLink[] = [
   { label: "Founder Story", href: "/founder-story" },
