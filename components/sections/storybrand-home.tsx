@@ -3,13 +3,11 @@
 // hairline rules instead of boxes, the solid button for the main action.
 import Image from "next/image";
 import Link from "next/link";
-import { cta, guide, plan, problem, pros, solution, success } from "@/lib/content/home";
+import { cta, guide, phone, plan, problem, pros, solution, success } from "@/lib/content/home";
 
 const wrap = "mx-auto w-full max-w-[80rem] px-5 md:px-12";
 const solidBtn =
   "inline-block rounded-[2px] bg-off-white px-7 py-4 text-[0.9375rem] font-medium text-[#0a0a0a] no-underline transition-colors hover:bg-white";
-const outlineBtn =
-  "inline-block rounded-[2px] border border-[#55534c] px-[1.6875rem] py-[0.9375rem] text-[0.9375rem] font-medium text-off-white no-underline transition-colors hover:border-off-white";
 const hair = "border-[#262626]";
 
 function Headline({
@@ -30,14 +28,10 @@ function Headline({
   );
 }
 
-function ButtonLink({ variant = "solid" }: { variant?: "solid" | "outline" }) {
+// Every consultation button is the solid one: it must always read clearly (Roger 10/30).
+function ButtonLink() {
   return (
-    <a
-      href={cta.href}
-      target="_blank"
-      rel="noopener noreferrer"
-      className={variant === "solid" ? solidBtn : outlineBtn}
-    >
+    <a href={cta.href} target="_blank" rel="noopener noreferrer" className={solidBtn}>
       {cta.label}
     </a>
   );
@@ -80,7 +74,7 @@ export function Problem() {
             </ul>
           </div>
           <div>
-            <ButtonLink variant="outline" />
+            <ButtonLink />
           </div>
         </div>
       </div>
@@ -102,19 +96,14 @@ export function Solution() {
             {solution.subheading}
           </h3>
           <p className="m-0 max-w-[520px] text-[1.0625rem] leading-[1.55] text-dove">{solution.body}</p>
-          <ol className="m-0 flex w-full list-none flex-col p-0">
-            {solution.points.map((point, index) => (
-              <li
-                key={point}
-                className={`flex items-baseline gap-6 border-t ${hair} py-[1.125rem] last:border-b`}
-              >
-                <span className="text-[1.75rem] font-light text-dove">
-                  {String(index + 1).padStart(2, "0")}
-                </span>
-                <span className="text-[1.1875rem]">{point}</span>
+          <ul className="m-0 flex w-full list-none flex-col gap-3 p-0">
+            {solution.points.map((point) => (
+              <li key={point} className="flex items-start gap-3 text-[1.0625rem] leading-[1.5]">
+                <span aria-hidden className="mt-[0.6em] block h-1.5 w-1.5 shrink-0 rounded-full bg-off-white" />
+                <span>{point}</span>
               </li>
             ))}
-          </ol>
+          </ul>
           <ButtonLink />
         </div>
         <figure className="m-0">
@@ -220,7 +209,7 @@ export function Guide() {
               </figcaption>
             </figure>
             <div>
-              <ButtonLink variant="outline" />
+              <ButtonLink />
             </div>
           </div>
         </div>
@@ -259,6 +248,17 @@ export function Plan() {
                 <div className="text-[2.75rem] font-light text-dove">{step.number}</div>
                 <h3 className="m-0 text-[1.375rem] font-medium">{step.title}</h3>
                 <p className="m-0 text-[0.9375rem] text-dove">{step.body}</p>
+                {step.number === "01" ? (
+                  <div className="mt-3 flex flex-col items-start gap-3">
+                    <ButtonLink />
+                    <p className="m-0 text-[0.9375rem] text-dove">
+                      Or call Jeremy:{" "}
+                      <a href={phone.href} className="font-medium text-off-white no-underline hover:text-white">
+                        {phone.label}
+                      </a>
+                    </p>
+                  </div>
+                ) : null}
               </div>
             </li>
           ))}

@@ -104,12 +104,8 @@ export function WhoItsForCategory({ audience }: { audience: Audience }) {
                   href={audience.cta.href}
                   target={audience.cta.href.startsWith("http") ? "_blank" : undefined}
                   rel={audience.cta.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                  className="cta mt-4 w-fit text-label text-onyx/60 transition-colors hover:text-onyx"
+                  className="mt-4 inline-block w-fit rounded-[2px] bg-onyx px-7 py-4 text-[0.9375rem] font-medium text-off-white no-underline transition-colors hover:bg-black"
                 >
-                  <span
-                    aria-hidden
-                    className="block h-px w-10 bg-current transition-[width] duration-300"
-                  />
                   {audience.cta.label}
                 </Link>
               )}
@@ -143,12 +139,8 @@ export function WhoItsForCategory({ audience }: { audience: Audience }) {
 
         <Link
           href="/contact"
-          className="cta mt-4 text-label text-onyx/60 transition-colors hover:text-onyx"
+          className="mt-4 inline-block w-fit rounded-[2px] bg-onyx px-7 py-4 text-[0.9375rem] font-medium text-off-white no-underline transition-colors hover:bg-black"
         >
-          <span
-            aria-hidden
-            className="block h-px w-10 bg-current transition-[width] duration-300"
-          />
           Contact Us
         </Link>
       </div>

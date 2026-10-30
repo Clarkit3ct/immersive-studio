@@ -89,7 +89,7 @@ export const audiences: Audience[] = [
         "Any plan size, any number of floors",
         "A decision lounge on two levels",
         "A vendor showroom for materials and finishes",
-        "A historic railroad building in downtown Coeur d'Alene",
+        "Steps from Sherman Avenue in downtown Coeur d'Alene",
       ],
     },
     cta: { label: "Schedule free consultation", href: "https://immersivestudiocda-book.as.me/" },
@@ -471,10 +471,10 @@ export const foundingStudioPartners = {
 
 export const ourLocation = {
   eyebrow: "Our Location",
-  headline: "Historic Character in Downtown Coeur d'Alene",
-  headlineLight: "Historic character in",
+  headline: "In the Heart of Downtown Coeur d'Alene",
+  headlineLight: "In the heart of",
   headlineBold: "downtown Coeur d'Alene",
-  body: "Immersive Studio CDA is located at 216 E. Coeur d'Alene Ave, inside a historic railroad building in the heart of downtown Coeur d'Alene. Rich with original character and architectural presence, the building offers a distinctive setting for the studio - just steps from Sherman Avenue and four blocks from Lake Coeur d'Alene. Surrounded by downtown's restaurants, hotels, galleries, and shops, it's a natural place to meet with clients, gather a project team, and make a day of the experience.",
+  body: "Immersive Studio CDA is at 216 E. Coeur d'Alene Ave, in an industrial warehouse building in the heart of downtown Coeur d'Alene, just steps from Sherman Avenue and four blocks from Lake Coeur d'Alene. Surrounded by downtown's restaurants, hotels, galleries, and shops, it's a natural place to meet with clients, gather a project team, and make a day of the experience.",
   stats: [
     { value: "Steps", label: "from Sherman Avenue" },
     { value: "4 blocks", label: "to Lake Coeur d'Alene" },

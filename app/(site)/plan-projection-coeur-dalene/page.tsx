@@ -18,7 +18,7 @@ const content: LandingContent = {
   "sections": [
     {
       "title": "The room",
-      "body": "A historic railroad building in the heart of downtown. The projection floor runs the length of the hall, two 50' × 13' walls carry the elevations, and a decision lounge on two levels holds the conversation after the walk."
+      "body": "An industrial warehouse building in the heart of downtown. The projection floor runs the length of the hall, two 50' × 13' walls carry the elevations, and a decision lounge on two levels holds the conversation after the walk."
     },
     {
       "title": "Sessions",

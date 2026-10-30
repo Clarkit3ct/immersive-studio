@@ -4,14 +4,15 @@
 import { consultationHref, audiences, audiencePath } from "@/lib/content/site";
 
 export const cta = { label: "Schedule free consultation →", href: consultationHref };
+export const phone = { label: "208-755-2696", href: "tel:+12087552696" };
 
 export const problem = {
   light: "You shouldn't have to build your home",
   bold: "to find out if you like it!",
   subheading: "Don't Let Misunderstandings Drain Your Budget",
   image: {
-    src: "/assets/home/floor-plan-markup-change-orders.webp",
-    alt: "A project team marking up a floor plan with red pen changes",
+    src: "/assets/home/studio-from-the-mezzanine.webp",
+    alt: "The studio from the mezzanine: a floor plan projected across the floor, the elevations up on both walls, a small group standing in the rooms",
   },
   intro: "What happens if you skip the walkthrough?",
   points: [
