@@ -9,6 +9,7 @@ import {
   desktopNav,
   navGroups,
   pageLinks,
+  primaryAction,
   type NavGroup,
   type NavSubsection,
 } from "@/lib/content/site";
@@ -367,6 +368,23 @@ export function SiteHeader() {
               )}
             </nav>
 
+            <a
+              href={primaryAction.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-hidden={menuOpen}
+              tabIndex={menuOpen ? -1 : undefined}
+              className={`hidden whitespace-nowrap rounded-[2px] px-5 py-3 text-[0.875rem] font-medium tracking-normal transition-[opacity,transform,background-color] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none lg:inline-block ${
+                navOnLight ? "bg-onyx text-off-white hover:bg-black" : "bg-off-white text-onyx hover:bg-white"
+              } ${
+                menuOpen
+                  ? "pointer-events-none -translate-y-4 opacity-0 motion-reduce:translate-y-0"
+                  : "translate-y-0 opacity-100"
+              }`}
+            >
+              {primaryAction.label}
+            </a>
+
             <button
               ref={burgerRef}
               type="button"
@@ -444,8 +462,18 @@ export function SiteHeader() {
               />
             </nav>
 
-            <nav aria-label="Pages, expanded menu" className="flex flex-col gap-4">
-              <p className="text-label text-off-white/40">Pages</p>
+            <a
+              href={primaryAction.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={closeMenu}
+              className="w-fit rounded-[2px] bg-off-white px-6 py-4 text-[0.9375rem] font-medium text-onyx transition-colors hover:bg-white"
+            >
+              {primaryAction.label} →
+            </a>
+
+            <nav aria-label="Info, expanded menu" className="flex flex-col gap-4">
+              <p className="text-label text-off-white/40">Info</p>
               {pageLinks.map((link) => (
                 <Link
                   key={link.href}

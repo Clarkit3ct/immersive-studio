@@ -22,7 +22,7 @@ export function HowItWorks() {
             {copy.eyebrow}
           </h2>
 
-          <ol className="mx-auto grid w-full max-w-7xl grid-cols-1 gap-x-4 gap-y-6 md:grid-cols-5 md:gap-y-0 [&:hover>li]:md:opacity-55 [&:focus-within>li]:md:opacity-55">
+          <ol className="mx-auto grid w-full max-w-7xl grid-cols-1 gap-x-4 gap-y-6 md:grid-cols-4 md:gap-y-0 [&:hover>li]:md:opacity-55 [&:focus-within>li]:md:opacity-55">
             {copy.steps.map((step) => (
               <li
                 key={step.number}
@@ -51,14 +51,14 @@ export function HowItWorks() {
         </div>
       </section>
 
-      <section className="bg-off-white px-site pt-14 pb-24 md:pt-16 md:pb-32">
+      <section className="bg-[#0a0a0a] px-site pt-4 pb-24 md:pb-32">
         <div className="mx-auto grid w-full max-w-[110rem] gap-4 md:grid-cols-3 md:gap-6">
           {copy.highlights.map((highlight) => (
             <article
               key={highlight.value}
-              className="flex flex-col items-center gap-4 rounded-lg bg-beige/35 px-8 py-10 text-center"
+              className="flex flex-col items-center gap-4 rounded border border-[#262626] bg-[#141414] px-8 py-10 text-center"
             >
-              <p className="text-h2 font-secondary text-onyx">{highlight.value}</p>
+              <p className="text-[2.5rem] font-light leading-none text-off-white">{highlight.value}</p>
               <p className="text-label text-dove">{highlight.label}</p>
             </article>
           ))}

@@ -5,7 +5,7 @@ export function OurLocation() {
   return (
     <section
       id="the-studio"
-      className="scroll-mt-28 bg-onyx px-site pb-24 pt-0 text-off-white md:pb-32 md:pt-32"
+      className="scroll-mt-28 border-t border-[#262626] bg-[#0a0a0a] px-site pb-24 pt-0 text-off-white md:pb-32 md:pt-32"
     >
       <div className="mx-auto grid w-full max-w-[110rem] gap-12 lg:grid-cols-12 lg:gap-16">
         <div className="lg:col-span-7 -mx-8 w-[calc(100%+4rem)] md:mx-0 md:w-full">
@@ -22,8 +22,8 @@ export function OurLocation() {
 
         <div className="flex flex-col justify-center gap-8 lg:col-span-5">
           <p className="text-label text-off-white/50">{copy.eyebrow}</p>
-          <h2 className="max-w-4xl text-h1 font-secondary text-off-white">
-            {copy.headline}
+          <h2 className="m-0 max-w-4xl text-balance text-[2.125rem] font-light leading-[1.15] text-off-white md:text-[2.75rem]">
+            {copy.headlineLight} <span className="font-bold">{copy.headlineBold}</span>
           </h2>
           <p className="max-w-prose text-body font-primary text-off-white/75">
             {copy.body}

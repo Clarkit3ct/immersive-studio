@@ -66,7 +66,7 @@ export const privateEventsPath = "/private-events";
 export const whoItsForPage = {
   eyebrow: "Who It's For",
   headline: "The studio is built for the people who shape space.",
-  body: "Architects, builders, real estate professionals, experience creators, and homeowners come here to walk through a vision at full scale, before it exists anywhere else.",
+  body: "Architects, builders, interior designers, developers, real estate professionals, experience creators, and homeowners come here to walk through a vision at full scale, before it exists anywhere else.",
 } as const;
 
 export const audiences: Audience[] = [
@@ -84,15 +84,15 @@ export const audiences: Audience[] = [
     details: {
       title: "Our space allows for:",
       items: [
-        "Exact studio dimensions",
-        "Projection area",
-        "Supported plan sizes",
-        "Wall projection capabilities",
-        "Meeting and presentation features",
-        "Hospitality amenities",
+        "A 3,500± sq ft projection floor, plans at true 1:1",
+        "Two 50′ × 13′ walls for elevations at full height",
+        "Any plan size, any number of floors",
+        "A decision lounge on two levels",
+        "A vendor showroom for materials and finishes",
+        "A historic railroad building in downtown Coeur d'Alene",
       ],
     },
-    cta: { label: "Book a Session", href: "https://immersivestudiocda-book.as.me/" },
+    cta: { label: "Schedule free consultation", href: "https://immersivestudiocda-book.as.me/" },
     media: {
       hero: { label: "Pre-construction walkthrough", src: "/assets/who-is-it-for/builder/main-image.jpg" },
       inline: { label: "Studio details and projection", src: "/assets/who-is-it-for/builder/second-image.jpg" },
@@ -111,10 +111,68 @@ export const audiences: Audience[] = [
       "The studio is designed for collaborative review, bringing together architects, consultants, clients, and selected project partners. A curated vendor showcase also allows materials, fixtures, finishes, and lighting to be evaluated in context.",
       "The result is a more engaging and productive decision-making process, one that can accelerate approvals, reduce late-stage revisions, and support a smoother transition from design development to construction-ready plans. Interior designers use the studio the same way, testing layouts and finish relationships at real scale before orders go in.",
     ],
-    cta: { label: "Book a Session", href: "https://immersivestudiocda-book.as.me/" },
+    cta: { label: "Schedule free consultation", href: "https://immersivestudiocda-book.as.me/" },
     media: {
       hero: { label: "1:1 architectural projection", src: "/assets/who-is-it-for/architech/main-image.jpg" },
       inline: { label: "Collaborative design review", src: "/assets/who-is-it-for/architech/second-image.jpg" },
+    },
+  },
+  {
+    slug: "interior-designers",
+    label: "Interior Designers",
+    headline: "Show the room before the room exists.",
+    body: "Your clients shouldn't have to wait for move-in to know if the room works. Layouts, clearances and finishes at full scale, your renderings on the walls around them. They stand where the sofa goes and sign off with confidence.",
+    pageEyebrow: "FOR INTERIOR DESIGNERS",
+    pageHeadline: "Show the room\nbefore the room exists.",
+    subheading: "Why ask clients to imagine the room when they can stand in it?",
+    paragraphs: [
+      "Drawings and renderings only go so far. Standing in the room at full scale is when it clicks.",
+      "Your client's floor plan goes on the floor at true 1:1, with your renderings on the walls at full height. Furniture, clearances and sightlines read at true size, so one session can prevent a costly furniture or layout mistake.",
+      "Clients approve layouts and selections they can't really picture. Late changes mean redraws, reorders and hours you can't bill, and the sofa that looked right on paper crowds the room once it's in. When the finished room surprises the client, the design takes the blame.",
+      "Bring your client, the architect and key partners into one room. Materials, fixtures, finishes and lighting from our vendor showcase are seen in context, and your client decides: faster approvals and fewer late-stage revisions, settled before construction.",
+    ],
+    details: {
+      title: "In the room:",
+      items: [
+        "Your client's floor plan at true 1:1",
+        "Renderings and elevations at full height on two 50′ × 13′ walls",
+        "Furniture, clearances and sightlines at true size",
+        "Materials, fixtures, finishes and lighting from the vendor showcase",
+      ],
+    },
+    cta: { label: "Schedule free consultation", href: "https://immersivestudiocda-book.as.me/" },
+    media: {
+      hero: { label: "Clients in a great room at full scale", src: "/assets/who-is-it-for/interior-designer/main-image.jpg" },
+      inline: { label: "Reviewing a plan together at full scale", src: "/assets/who-is-it-for/interior-designer/second-image.jpg" },
+    },
+  },
+  {
+    slug: "developers",
+    label: "Developers",
+    headline: "Your sales gallery for homes that don't exist yet.",
+    body: "Your buyers shouldn't have to wait for a finished unit to fall in love with it. Homes, townhomes and condos at true 1:1, with no model unit to build, furnish or staff.",
+    pageEyebrow: "FOR DEVELOPERS",
+    pageHeadline: "Your sales gallery for\nhomes that don't exist yet.",
+    subheading: "Why wait for a model home to start showing buyers the space?",
+    paragraphs: [
+      "When buyers can't picture the unit, they wait, and every month they wait costs you. Model units tie up money before a single sale, fewer presales can make financing harder, and buyer changes mid-build cost time and margin.",
+      "Let buyers walk through different floor plans at full scale before construction begins. No finished model unit is required to get started.",
+      "Help prospective buyers experience their future home at full scale. Build confidence, answer questions, and give them a reason to commit sooner.",
+      "Built by a builder, for developers: 25 years in construction behind every session.",
+    ],
+    details: {
+      title: "In the room:",
+      items: [
+        "Homes, townhomes and condos at true 1:1",
+        "Several floor plans shown in one visit",
+        "No model unit to build, furnish or staff",
+        "Elevations at full height on two 50′ × 13′ walls",
+      ],
+    },
+    cta: { label: "Schedule free consultation", href: "https://immersivestudiocda-book.as.me/" },
+    media: {
+      hero: { label: "A home's elevation at full height above its plan", src: "/assets/who-is-it-for/developer/main-image.jpg" },
+      inline: { label: "Buyers on a full-scale plan", src: "/assets/who-is-it-for/developer/second-image.jpg" },
     },
   },
   {
@@ -129,7 +187,7 @@ export const audiences: Audience[] = [
       "Immersive Studio CDA creates a more efficient way to evaluate prospective properties. Bring multiple floor plans into the studio, experience each one at 1:1 scale, and compare layouts before scheduling in-person visits.",
       "By helping clients understand which spaces are most likely to fit their needs, the studio makes it easier to narrow the search, eliminate poor-fit properties earlier, and reserve valuable time for the locations worth seeing in person. Comparing a listing in another state? Bring the plans here and walk it at full scale instead of making the trip.",
     ],
-    cta: { label: "Book a Session", href: "https://immersivestudiocda-book.as.me/" },
+    cta: { label: "Schedule free consultation", href: "https://immersivestudiocda-book.as.me/" },
     media: {
       hero: { label: "Property comparison at 1:1 scale", src: "/assets/who-is-it-for/realtor/main-image.jpg" },
       inline: { label: "Multi-plan studio session", src: "/assets/who-is-it-for/realtor/second-image.jpg" },
@@ -167,7 +225,7 @@ export const audiences: Audience[] = [
       "This immersive review creates an opportunity to refine important decisions early, reduce the risk of costly change orders and delays, and move into construction with greater clarity and confidence.",
       "Ensure the plans you approve become a home you will love living in for years to come.",
     ],
-    cta: { label: "Book a Session", href: "https://immersivestudiocda-book.as.me/" },
+    cta: { label: "Schedule free consultation", href: "https://immersivestudiocda-book.as.me/" },
     media: {
       hero: { label: "Future home at full scale", src: "/assets/who-is-it-for/homeowner/main-image.jpg" },
       inline: { label: "Room flow and layout review", src: "/assets/who-is-it-for/homeowner/second-image.jpg" },
@@ -185,11 +243,21 @@ export function getAudience(slug: string) {
 
 export const bundleHref = "https://immersivestudiocda-book.as.me/catalog/fb0d2c96/?productId=2281309&clearCart=true";
 
+export const eventsHref = "https://events.immersivestudiocda.com";
+export const consultationHref = "https://immersivestudiocda-book.as.me/";
+
 export const pageLinks: NavLink[] = [
-  { label: "FAQ", href: "/faq" },
   { label: "Founder Story", href: "/founder-story" },
-  { label: "Contact Us", href: "/contact" },
+  { label: "FAQ", href: "/faq" },
+  { label: "Contact", href: "/contact" },
   { label: "Terms", href: "/terms" },
+];
+
+const bookLinks: NavLink[] = [
+  { label: "Free Consultation", href: consultationHref },
+  { label: "Book a Session", href: "https://immersivestudiocda-book.as.me/" },
+  { label: "3-Session Bundle", href: bundleHref },
+  { label: "Membership", href: "/membership" },
 ];
 
 export const desktopNav: DesktopNavItem[] = [
@@ -197,19 +265,12 @@ export const desktopNav: DesktopNavItem[] = [
     label: "The Experience",
     links: [
       { label: "Who It's For", href: whoItsForPath },
-      { label: "Private Events", href: privateEventsPath },
-    ],
-  },
-  {
-    label: "The Studio",
-    links: [
-      { label: "Membership", href: "/membership" },
-      { label: "3-Session Bundle", href: bundleHref },
       { label: "Vendor Showcase", href: showcasePath },
-      { label: "Book a Session", href: "https://immersivestudiocda-book.as.me/" },
     ],
   },
-  { label: "Information", links: pageLinks.filter((link) => link.label !== "FAQ") },
+  { label: "Events", href: eventsHref },
+  { label: "Book a Session", links: bookLinks },
+  { label: "Info", links: pageLinks },
 ];
 
 export const navGroups: NavGroup[] = [
@@ -217,8 +278,9 @@ export const navGroups: NavGroup[] = [
     id: "experience",
     label: "The Experience",
     links: [
-      { label: "The Experience", href: "/#the-experience" },
-      { label: "Private Events", href: privateEventsPath },
+      { label: "Who It's For", href: whoItsForPath },
+      { label: "Vendor Showcase", href: showcasePath },
+      { label: "Events", href: eventsHref },
     ],
     subsections: [
       {
@@ -233,25 +295,23 @@ export const navGroups: NavGroup[] = [
   },
   {
     id: "studio",
-    label: "The Studio",
-    links: [
-      { label: "The Studio", href: "/#the-studio" },
-      { label: "Membership", href: "/membership" },
-      { label: "3-Session Bundle", href: bundleHref },
-      { label: "Vendor Showcase", href: showcasePath },
-      { label: "Book a Session", href: "https://immersivestudiocda-book.as.me/" },
-    ],
+    label: "Book a Session",
+    links: bookLinks,
   },
 ];
 
+/** The one main button, on every page (Roger + Jeremy 10/30). */
 export const primaryAction: NavLink = {
-  label: "Book a Session",
-  href: "https://immersivestudiocda-book.as.me/",
+  label: "Schedule free consultation",
+  href: consultationHref,
 };
 
 export const hero = {
-  eyebrow: "The New Dimension of Design",
+  eyebrow: "Save Money, Build Better!",
   headline: "Full Scale. Full Clarity.",
+  /** Jeremy's headline: light, then the last phrase in bold. */
+  headlineLight: "Build Your Dream Home",
+  headlineBold: "Without Surprises",
   subhead:
     "Stand inside your home before it's built. Your floor plan at full size on the floor, the walls at full height around you, so every room is decided before anything is framed.",
   scrollCue: "The Experience",
@@ -304,27 +364,20 @@ export const howItWorks = {
     },
     {
       number: "02",
-      title: "Project",
-      body: "Your plan goes on the floor at full size. The elevations go up on the walls.",
-      image: "/assets/diagrams/session/02-project.svg",
-      alt: "Ceiling projectors throwing the floor plan onto the studio floor at full size",
-    },
-    {
-      number: "03",
       title: "Walk",
       body: "You stand in each room and feel how big it really is.",
       image: "/assets/diagrams/session/03-walk.svg",
       alt: "Two people walking across the plan projected on the floor",
     },
     {
-      number: "04",
+      number: "03",
       title: "Refine",
       body: "Mark what you'd change, while a change is still only a line.",
       image: "/assets/diagrams/session/04-refine.svg",
       alt: "One person kneeling to mark a change on the floor while another looks on",
     },
     {
-      number: "05",
+      number: "04",
       title: "Confirm",
       body: "Leave with the decisions made, before anyone builds anything.",
       image: "/assets/diagrams/session/05-confirm.svg",
@@ -419,6 +472,8 @@ export const foundingStudioPartners = {
 export const ourLocation = {
   eyebrow: "Our Location",
   headline: "Historic Character in Downtown Coeur d'Alene",
+  headlineLight: "Historic character in",
+  headlineBold: "downtown Coeur d'Alene",
   body: "Immersive Studio CDA is located at 216 E. Coeur d'Alene Ave, inside a historic railroad building in the heart of downtown Coeur d'Alene. Rich with original character and architectural presence, the building offers a distinctive setting for the studio - just steps from Sherman Avenue and four blocks from Lake Coeur d'Alene. Surrounded by downtown's restaurants, hotels, galleries, and shops, it's a natural place to meet with clients, gather a project team, and make a day of the experience.",
   stats: [
     { value: "Steps", label: "from Sherman Avenue" },

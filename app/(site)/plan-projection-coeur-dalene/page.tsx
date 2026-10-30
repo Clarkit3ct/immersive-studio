@@ -58,7 +58,7 @@ const content: LandingContent = {
   },
   "secondary": {
     "label": "Private events",
-    "href": "/private-events"
+    "href": "https://events.immersivestudiocda.com"
   }
 };
 
