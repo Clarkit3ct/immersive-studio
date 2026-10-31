@@ -17,6 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/faq",
     "/founder-story",
     "/contact",
+    "/terms",
     "/floor-plan-walkthrough",
     "/plan-projection-coeur-dalene",
     "/spokane",
