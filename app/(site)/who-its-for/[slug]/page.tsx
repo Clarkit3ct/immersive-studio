@@ -11,6 +11,16 @@ export function generateStaticParams() {
   return audiences.map((audience) => ({ slug: audience.slug }));
 }
 
+// Browser-tab and search-result titles: the service first, then who it serves.
+// The page headings themselves are unchanged.
+const searchTitles: Record<string, string> = {
+  builders: "Floor Plan Projection for Builders",
+  architects: "Floor Plan Projection for Architects",
+  "real-estate-professionals": "Floor Plan Projection for Real Estate Professionals",
+  "experience-creators": "Projection Studio for Experience Creators",
+  homeowners: "Floor Plan Projection for Homeowners",
+};
+
 export async function generateMetadata({
   params,
 }: AudiencePageProps): Promise<Metadata> {
@@ -22,7 +32,7 @@ export async function generateMetadata({
   }
 
   return {
-    title: audience.label,
+    title: searchTitles[slug] ?? audience.label,
     description: audience.subheading ?? audience.body,
     alternates: { canonical: `/who-its-for/${slug}` },
   };

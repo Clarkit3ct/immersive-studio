@@ -1,17 +1,18 @@
 // Session terms. Source: projects/reworld-studio/cda-immersive/26-0908-TERMS-FOR-SITE.md (attorney review pending).
+// Oct 30: clauses 1-2 for the $150 deposit model (S134, Roger + Jeremy); the late-cancel line awaits Jeremy's yes.
 // Sept 29 fact updates: clause 4 (48 hours, matches the booking emails), clause 8 (carry over, matches the membership pages), clause 9 added (bundles).
 export const termsPage = {
   "eyebrow": "Session Terms",
   "headline": "Terms",
-  "updated": "Last updated September 2026",
+  "updated": "Last updated October 2026",
   "sections": [
     {
       "title": "1. Booking and payment",
-      "body": "Your session is confirmed when payment is received at booking. Membership sessions are covered by your membership. Sessions beyond your monthly allowance are billed at your member rate."
+      "body": "Non-member sessions are booked with a $150 deposit, paid by card when you book. The deposit counts toward your session fee. The balance is charged to the same card on the day of your session, and booking authorizes that charge. Membership sessions are covered by your membership. Sessions beyond your monthly allowance are billed at your member rate. Free consultations need no payment."
     },
     {
       "title": "2. Rescheduling and cancellation",
-      "body": "You may reschedule or cancel up to 24 hours before your session start time at no cost, using the links in your confirmation email. Cancellations or reschedules inside 24 hours, and no-shows, forfeit the session fee. Membership sessions cancelled inside 24 hours count against that month's allowance."
+      "body": "You may cancel at no cost up to 24 hours before your session start time, using the link in your confirmation email, and we refund your deposit to your card. You may reschedule at any time, including inside 24 hours: online up to 24 hours before, or by replying to your confirmation email after that. A rescheduled session keeps its deposit. If you cancel inside 24 hours, or don't show, the deposit is not refunded and no balance is charged. Membership sessions cancelled inside 24 hours count against that month's allowance."
     },
     {
       "title": "3. Your plans and files",

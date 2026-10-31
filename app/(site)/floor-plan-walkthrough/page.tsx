@@ -13,7 +13,8 @@ const content: LandingContent = {
   "intro": "Immersive Studio CDA projects architectural floor plans at true 1:1 scale on a 3,500± sq ft floor, with elevations on the walls at full height. Walk the rooms before construction begins, with the people who have to live with the decisions.",
   "image": {
     "src": "/assets/real/studio-session-walkthrough.jpg",
-    "alt": "A studio session in progress: clients walking a floor plan projected at full scale, with elevations and a rendering on the walls"
+    "alt": "A studio session in progress: clients walking a floor plan projected at full scale, with elevations and a rendering on the walls",
+    "credit": "Photo credit: Uptic Studios"
   },
   "sections": [
     {

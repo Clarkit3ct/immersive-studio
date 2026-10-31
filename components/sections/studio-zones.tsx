@@ -21,7 +21,7 @@ export function StudioZones() {
           <h2 className="text-h2 font-secondary text-off-white">How the space works</h2>
           <p className="max-w-prose text-body font-primary text-off-white/70">
             A 3,500± sq ft projection floor, two 50&apos; × 13&apos; projection walls, and a
-            decision lounge on two levels, inside a historic railroad building in downtown
+            decision lounge on two levels, in an industrial warehouse building in downtown
             Coeur d&apos;Alene.
           </p>
         </div>
