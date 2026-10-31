@@ -46,3 +46,6 @@ videos/*
 !videos/*.js
 !videos/*.ts
 public/_next-video
+
+# the list of setting names (no secrets) is kept in git
+!.env.example
