@@ -1,54 +1,78 @@
+import Link from "next/link";
 import { howItWorks as copy } from "@/lib/content/site";
 
-export function HowItWorks() {
+/*
+ * How a Session Works: the five steps, each one's drawing sitting directly above its own words.
+ * The drawings are light line-work made for a dark ground, so this band is dark and the drawings
+ * have no frame of their own: they belong to the section, not dropped into it.
+ * Hover or focus a step: its room grows and brightens, the others step back.
+ */
+export function HowItWorks({ filmLink = false }: { filmLink?: boolean }) {
   return (
-    <section
-      id="how-it-works"
-      className="scroll-mt-28 bg-off-white px-site pt-8 pb-24 md:pt-10 md:pb-32"
-    >
-      <div className="mx-auto flex w-full max-w-[110rem] flex-col gap-16">
-        <h2 className="mx-auto w-full max-w-6xl text-center text-h2 font-secondary text-onyx lg:px-8">
-          {copy.eyebrow}
-        </h2>
+    <>
+      <section
+        id="how-it-works"
+        aria-labelledby="how-it-works-title"
+        className="scroll-mt-28 bg-[#0a0a0a] px-site pt-20 pb-16 md:pt-28 md:pb-24"
+      >
+        <div className="mx-auto flex w-full max-w-[110rem] flex-col gap-12 md:gap-16">
+          <h2
+            id="how-it-works-title"
+            className="mx-auto w-full max-w-6xl text-center text-h2 font-secondary text-off-white lg:px-8"
+          >
+            {copy.eyebrow}
+          </h2>
 
-        <ol className="grid gap-6 md:grid-cols-5 md:gap-6">
-          {copy.steps.map((step) => (
-            <li
-              key={step.number}
-              className="group relative flex origin-center flex-col rounded-xl transition-[transform,box-shadow] duration-500 ease-out hover:scale-[1.03] hover:shadow-[0_20px_40px_-20px_rgba(0,0,0,0.18)] motion-reduce:transition-none motion-reduce:hover:scale-100"
+          <ol className="mx-auto grid w-full max-w-7xl grid-cols-1 gap-x-4 gap-y-6 md:grid-cols-4 md:gap-y-0 [&:hover>li]:md:opacity-55 [&:focus-within>li]:md:opacity-55">
+            {copy.steps.map((step) => (
+              <li
+                key={step.number}
+                tabIndex={0}
+                className="group flex flex-row items-center gap-4 text-left outline-none md:flex-col md:gap-0 md:text-center transition-opacity duration-500 ease-out md:hover:!opacity-100 md:focus:!opacity-100 motion-reduce:transition-none"
+              >
+                <div className="w-[42%] shrink-0 md:w-full md:max-w-[16rem] origin-bottom transition-[transform,filter] duration-500 ease-out group-hover:scale-[1.12] group-hover:brightness-125 group-focus:scale-[1.12] group-focus:brightness-125 motion-reduce:transition-none motion-reduce:group-hover:scale-100">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={step.image}
+                    alt={step.alt}
+                    width={285}
+                    height={252}
+                    loading="lazy"
+                    className="block h-auto w-full"
+                  />
+                </div>
+                <div className="flex flex-col gap-1.5 md:mt-4 md:max-w-[15rem] md:gap-2 md:px-2">
+                  <p className="text-label text-dove">{step.number}</p>
+                  <h3 className="text-h3 font-primary text-off-white">{step.title}</h3>
+                  <p className="text-body font-primary text-off-white/65">{step.body}</p>
+                </div>
+              </li>
+            ))}
+          </ol>
+          {filmLink ? (
+            <Link
+              href="/the-experience"
+              className="mx-auto text-[0.9375rem] font-medium text-off-white underline-offset-4 hover:underline"
             >
-              {/* Border glow wrapper */}
-              <div className="absolute inset-0 z-0 overflow-hidden rounded-xl opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-                <div className="absolute left-1/2 top-1/2 aspect-square w-[200%] -translate-x-1/2 -translate-y-1/2 animate-[spin_3s_linear_infinite] bg-[conic-gradient(from_0deg,transparent_0%,transparent_75%,var(--color-dove)_100%)]" />
-              </div>
-              
-              {/* Inner card background to hide inner part of glow */}
-              <div className="absolute inset-[1px] z-10 rounded-[11px] bg-off-white" />
+              Experience the studio →
+            </Link>
+          ) : null}
+        </div>
+      </section>
 
-              {/* Card content */}
-              <div className="relative z-20 flex flex-col gap-3 px-5 py-6">
-                <p className="text-label text-dove">{step.number}</p>
-                <h3 className="text-h3 font-primary text-onyx">{step.title}</h3>
-                <p className="text-body font-primary text-onyx/60">{step.body}</p>
-              </div>
-            </li>
-          ))}
-        </ol>
-
-        <div className="grid gap-4 border-t border-beige pt-12 md:grid-cols-3 md:gap-6">
+      <section className="bg-[#0a0a0a] px-site pt-4 pb-24 md:pb-32">
+        <div className="mx-auto grid w-full max-w-[110rem] gap-4 md:grid-cols-3 md:gap-6">
           {copy.highlights.map((highlight) => (
             <article
               key={highlight.value}
-              className="flex flex-col items-center gap-4 rounded-lg bg-beige/35 px-8 py-10 text-center"
+              className="flex flex-col items-center gap-4 rounded border border-[#262626] bg-[#141414] px-8 py-10 text-center"
             >
-              <p className="text-h2 font-secondary text-onyx">
-                {highlight.value}
-              </p>
+              <p className="text-[2.5rem] font-light leading-none text-off-white">{highlight.value}</p>
               <p className="text-label text-dove">{highlight.label}</p>
             </article>
           ))}
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }

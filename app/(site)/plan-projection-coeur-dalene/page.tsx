@@ -13,12 +13,13 @@ const content: LandingContent = {
   "intro": "Floor plans at 1:1 scale on a 3,500± sq ft projection floor, wall elevations at full height, and private sessions for architects, builders, designers, real estate professionals, and homeowners. Downtown at 216 E Coeur d'Alene Ave.",
   "image": {
     "src": "/assets/real/studio-session-walkthrough.jpg",
-    "alt": "A studio session in progress: clients walking a floor plan projected at full scale, with elevations and a rendering on the walls"
+    "alt": "A studio session in progress: clients walking a floor plan projected at full scale, with elevations and a rendering on the walls",
+    "credit": "Photo credit: Uptic Studios"
   },
   "sections": [
     {
       "title": "The room",
-      "body": "A historic railroad building in the heart of downtown. The projection floor runs the length of the hall, two 50' × 13' walls carry the elevations, and a decision lounge on two levels holds the conversation after the walk."
+      "body": "An industrial warehouse building in the heart of downtown. The projection floor runs the length of the hall, two 50' × 13' walls carry the elevations, and a decision lounge on two levels holds the conversation after the walk."
     },
     {
       "title": "Sessions",
@@ -58,7 +59,7 @@ const content: LandingContent = {
   },
   "secondary": {
     "label": "Private events",
-    "href": "/private-events"
+    "href": "https://events.immersivestudiocda.com"
   }
 };
 

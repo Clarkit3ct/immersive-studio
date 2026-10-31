@@ -10,21 +10,22 @@ export const metadata: Metadata = {
 const content: LandingContent = {
   "eyebrow": "Spokane",
   "headline": "Floor plan projection, 30 minutes from Spokane",
-  "intro": "There is no full-scale plan projection studio in Spokane. The nearest one is open in downtown Coeur d'Alene: a 3,500± sq ft floor that shows architectural plans at true 1:1 scale, with elevations on two 50' × 13' walls. About 30 minutes east on I-90.",
+  "intro": "The closest full-scale plan projection studio to Spokane is in downtown Coeur d'Alene: a 3,500± sq ft floor that shows architectural plans at true 1:1 scale, with elevations on two 50' × 13' walls. About 30 minutes east on I-90.",
   "image": {
     "src": "/assets/real/studio-session-walkthrough.jpg",
-    "alt": "A studio session in progress: clients walking a floor plan projected at full scale, with elevations and a rendering on the walls"
+    "alt": "A studio session in progress: clients walking a floor plan projected at full scale, with elevations and a rendering on the walls",
+    "credit": "Photo credit: Uptic Studios"
   },
   "sections": [
     {
       "title": "Worth the drive",
-      "body": "A session puts your whole team and your client inside the plan at real size. Room sizes, clearances, sight lines, and furniture all read the way they will in the finished build, and decisions get made standing in the space they affect. One hour on the floor replaces weeks of markups."
+      "body": "A session puts your whole team and your client inside the plan at real size. Room sizes, clearances, sight lines, and furniture all read the way they will in the finished build, and decisions get made standing in the space they affect."
     },
     {
       "title": "Who makes the trip",
       "bullets": [
-        "Spokane architects bring clients for approvals on projects across the region.",
-        "Builders in Spokane and Kootenai counties lock decisions before framing.",
+        "Architects bring clients for approvals.",
+        "Builders lock decisions before framing.",
         "Interior designers test layouts at real scale before orders go in.",
         "Real estate professionals compare listings, including out-of-state properties, without a flight.",
         "Homeowners building in North Idaho or Eastern Washington walk the plan once before it is permanent."
@@ -46,7 +47,7 @@ const content: LandingContent = {
     },
     {
       "q": "Do you work with Spokane builders and architects?",
-      "a": "Yes. Most sessions are booked by the professional and attended by their client. Memberships and a three-session bundle are available for firms that come often."
+      "a": "Yes. Memberships and a three-session bundle are available for firms that come often."
     },
     {
       "q": "What do I need to bring?",

@@ -1,18 +1,17 @@
 import { Hero } from "@/components/sections/hero";
 import { HowItWorks } from "@/components/sections/how-it-works";
 import { OurLocation } from "@/components/sections/our-location";
-import { PrivateEvents } from "@/components/sections/private-events";
-import { FoundingStudioPartners } from "@/components/sections/founding-studio-partners";
-import { WhatHappensHere } from "@/components/sections/what-happens-here";
+import { Guide, Plan, Problem, ProsBand, Solution, Success } from "@/components/sections/storybrand-home";
 import { Preloader } from "@/components/ui/preloader";
 import { StudioZones } from "@/components/sections/studio-zones";
+import { HOME_TITLE, SITE_DESCRIPTION, localBusinessSchema } from "@/lib/seo";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  title: { absolute: HOME_TITLE },
+  description: SITE_DESCRIPTION,
   alternates: { canonical: "/" },
 };
-
-const localBusinessSchema = {"@context": "https://schema.org", "@type": "LocalBusiness", "name": "Immersive Studio CDA", "url": "https://www.immersivestudiocda.com/", "telephone": "+1-208-755-2696", "email": "contact@immersivestudiocda.com", "image": "https://www.immersivestudiocda.com/assets/real/studio-session-walkthrough.jpg", "description": "Walk your floor plans at full scale. A 1:1 projection studio in downtown Coeur d'Alene for architects, builders, real estate professionals, and homeowners.", "address": {"@type": "PostalAddress", "streetAddress": "216 E Coeur d'Alene Ave", "addressLocality": "Coeur d'Alene", "addressRegion": "ID", "postalCode": "83814", "addressCountry": "US"}, "areaServed": ["Coeur d'Alene", "Spokane", "North Idaho", "Eastern Washington"], "potentialAction": {"@type": "ReserveAction", "target": "https://immersivestudiocda-book.as.me/", "name": "Book a Session"}};
 
 export default function Home() {
   return (
@@ -22,13 +21,18 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
       <Preloader />
+      {/* Jeremy's StoryBrand order down to the plan; our diagram after his solution;
+          from his closing line down, our sections and imagery (Roger 10/30). */}
       <Hero />
-      <WhatHappensHere />
-      <HowItWorks />
+      <Problem />
+      <Solution />
+      <HowItWorks filmLink />
+      <Guide />
+      <Plan />
+      <Success />
       <StudioZones />
-      <FoundingStudioPartners />
       <OurLocation />
-      <PrivateEvents />
+      <ProsBand />
     </>
   );
 }
